@@ -14,7 +14,8 @@ string palindrome(string n){
      string result = "да";
      while (index < len/2){
           if (n[index] == n[len  - 1 - index])result = "да";
-          else result = "нет";
+          else {result = "нет";
+          break;}
           index = index + 1;
      }
      return result;
