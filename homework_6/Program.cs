@@ -28,10 +28,10 @@ double InputData(string text){
     double n  = double.Parse(Console.ReadLine());
     return n;
 }
-void LineIntersection(double k1, double k2, double b1, double b2){
+void LineIntersection(double b1, double k1, double b2, double k2){
     double x = -(b1 - b2) / (k1 - k2);
     double y = (k2 * x) + b2;
     Console.WriteLine($"точка пересечения прямых ({Math.Round(x, 2)}, {Math.Round(y, 2)})");
 }
 
-LineIntersection(InputData("k1 = "), InputData("k2 = "), InputData("b1 = "), InputData("b2 = "));
+LineIntersection(InputData("b1 = "), InputData("k1 = "), InputData("b2 = "), InputData("k2 = "));
